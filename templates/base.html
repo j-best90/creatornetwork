@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20ten Labs</title>
+    <meta name="viewport" content="wid=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<nav>
+    <div class="container nav-wrapper">
+        <ul id="menu-options" class="right">
+            <li>Creator Network</li>
+            <li>Social Listening</li>
+            <li>Campaign Planning</li>
+            <li>Trending</li>
+        </ul>
+    </div>
+</nav>
+<h1>{% block content %}{% endblock content %}</h1>
+</body>
+</html>
